@@ -7,7 +7,8 @@ class Profile(models.Model):
     bio = models.TextField()
     passion = models.TextField()
     profile_picture = models.ImageField(upload_to='media/images', null=True)
-    
+    cover_picture = models.ImageField(upload_to='media/images', null=True)
+
     def __str__(self):
         return str(self.name)
 
